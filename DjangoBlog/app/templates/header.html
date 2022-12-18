@@ -1,0 +1,25 @@
+  {% load static %}
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'img/profile.png' %}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="/">Murat YILDIZ</a></h1>
+        <div class="social-links mt-3 text-center">
+          {% for Socials in Social %}
+          <a href="{{ Socials.SocialsURL }}" class="{{ Socials.SocialsName }}"><i class="bx bxl-{{ Socials.SocialsName }}"></i></a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="/" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Ana Sayfa</span></a></li>
+          <li><a href="/index/#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Hakkımda</span></a></li>
+          <li><a href="/index/#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Bloglarım</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>

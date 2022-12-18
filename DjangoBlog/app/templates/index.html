@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+
+<body>
+  {% include "header.html" %}
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Murat YILDIZ</h1>
+      <p><span class="typed" data-typed-items="DevOps, Django, Python, FastAPI"></span></p>
+    </div>
+  </section>
+
+  <main id="main">
+    {% include 'about.html' %}
+    {% include 'blog.html' %}
+  </main>
+  {% include 'footer.html' %}
+
+  {% include "js.html" %}
+</body>
+
+</html>
